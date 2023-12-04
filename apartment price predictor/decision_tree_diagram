@@ -1,0 +1,229 @@
+|--- ac <= 0.50
+|   |--- size <= 8.50
+|   |   |--- bedrooms <= 4.50
+|   |   |   |--- livingrooms <= 2.50
+|   |   |   |   |--- maid_room <= 0.50
+|   |   |   |   |   |--- bedrooms <= 1.50
+|   |   |   |   |   |   |--- class: 100000-199999
+|   |   |   |   |   |--- bedrooms >  1.50
+|   |   |   |   |   |   |--- size <= 3.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |--- size >  3.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |--- maid_room >  0.50
+|   |   |   |   |   |--- size <= 7.50
+|   |   |   |   |   |   |--- kitchen <= 0.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |--- kitchen >  0.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |--- size >  7.50
+|   |   |   |   |   |   |--- front <= 3.50
+|   |   |   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |   |   |--- front >  3.50
+|   |   |   |   |   |   |   |--- class: 100000-199999
+|   |   |   |--- livingrooms >  2.50
+|   |   |   |   |--- size <= 5.50
+|   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |--- size >  5.50
+|   |   |   |   |   |--- property_age <= 0.50
+|   |   |   |   |   |   |--- frontyard <= 0.50
+|   |   |   |   |   |   |   |--- class: 100000-199999
+|   |   |   |   |   |   |--- frontyard >  0.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |--- property_age >  0.50
+|   |   |   |   |   |   |--- driver_room <= 0.50
+|   |   |   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |   |   |--- driver_room >  0.50
+|   |   |   |   |   |   |   |--- class: 100000-199999
+|   |   |--- bedrooms >  4.50
+|   |   |   |--- elevator <= 0.50
+|   |   |   |   |--- furnished <= 0.50
+|   |   |   |   |   |--- size <= 6.50
+|   |   |   |   |   |   |--- pool <= 0.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |--- pool >  0.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |--- size >  6.50
+|   |   |   |   |   |   |--- livingrooms <= 2.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |--- livingrooms >  2.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |--- furnished >  0.50
+|   |   |   |   |   |--- property_age <= 0.50
+|   |   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |   |--- property_age >  0.50
+|   |   |   |   |   |   |--- class: 100000-199999
+|   |   |   |--- elevator >  0.50
+|   |   |   |   |--- pool <= 0.50
+|   |   |   |   |   |--- front <= 3.50
+|   |   |   |   |   |   |--- size <= 5.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |--- size >  5.50
+|   |   |   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |   |--- front >  3.50
+|   |   |   |   |   |   |--- size <= 4.50
+|   |   |   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |   |   |--- size >  4.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |--- pool >  0.50
+|   |   |   |   |   |--- front <= 2.50
+|   |   |   |   |   |   |--- size <= 5.50
+|   |   |   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |   |   |--- size >  5.50
+|   |   |   |   |   |   |   |--- class: 100000-199999
+|   |   |   |   |   |--- front >  2.50
+|   |   |   |   |   |   |--- class: 100000-199999
+|   |--- size >  8.50
+|   |   |--- elevator <= 0.50
+|   |   |   |--- livingrooms <= 2.50
+|   |   |   |   |--- front <= 1.50
+|   |   |   |   |   |--- livingrooms <= 1.50
+|   |   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |   |--- livingrooms >  1.50
+|   |   |   |   |   |   |--- maid_room <= 0.50
+|   |   |   |   |   |   |   |--- class: 100000-199999
+|   |   |   |   |   |   |--- maid_room >  0.50
+|   |   |   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |--- front >  1.50
+|   |   |   |   |   |--- class: 0-99999
+|   |   |   |--- livingrooms >  2.50
+|   |   |   |   |--- front <= 2.00
+|   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |--- front >  2.00
+|   |   |   |   |   |--- roof <= 0.50
+|   |   |   |   |   |   |--- class: 600000-699999
+|   |   |   |   |   |--- roof >  0.50
+|   |   |   |   |   |   |--- duplex <= 0.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |--- duplex >  0.50
+|   |   |   |   |   |   |   |--- class: 100000-199999
+|   |   |--- elevator >  0.50
+|   |   |   |--- class: 200000-299999
+|--- ac >  0.50
+|   |--- driver_room <= 0.50
+|   |   |--- furnished <= 0.50
+|   |   |   |--- elevator <= 0.50
+|   |   |   |   |--- livingrooms <= 4.50
+|   |   |   |   |   |--- duplex <= 0.50
+|   |   |   |   |   |   |--- size <= 6.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |--- size >  6.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |--- duplex >  0.50
+|   |   |   |   |   |   |--- front <= 1.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |--- front >  1.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- livingrooms >  4.50
+|   |   |   |   |   |--- class: 100000-199999
+|   |   |   |--- elevator >  0.50
+|   |   |   |   |--- size <= 3.50
+|   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |--- size >  3.50
+|   |   |   |   |   |--- class: 100000-199999
+|   |   |--- furnished >  0.50
+|   |   |   |--- front <= 4.50
+|   |   |   |   |--- garage <= 0.50
+|   |   |   |   |   |--- pool <= 0.50
+|   |   |   |   |   |   |--- size <= 8.00
+|   |   |   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |   |   |--- size >  8.00
+|   |   |   |   |   |   |   |--- class: 100000-199999
+|   |   |   |   |   |--- pool >  0.50
+|   |   |   |   |   |   |--- size <= 7.00
+|   |   |   |   |   |   |   |--- class: 200000-299999
+|   |   |   |   |   |   |--- size >  7.00
+|   |   |   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |--- garage >  0.50
+|   |   |   |   |   |--- elevator <= 0.50
+|   |   |   |   |   |   |--- bathrooms <= 3.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |--- bathrooms >  3.50
+|   |   |   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |   |--- elevator >  0.50
+|   |   |   |   |   |   |--- fireplace <= 0.50
+|   |   |   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |   |   |--- fireplace >  0.50
+|   |   |   |   |   |   |   |--- class: 100000-199999
+|   |   |   |--- front >  4.50
+|   |   |   |   |--- duplex <= 0.50
+|   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |--- duplex >  0.50
+|   |   |   |   |   |--- basement <= 0.50
+|   |   |   |   |   |   |--- class: 100000-199999
+|   |   |   |   |   |--- basement >  0.50
+|   |   |   |   |   |   |--- class: 0-99999
+|   |--- driver_room >  0.50
+|   |   |--- size <= 6.50
+|   |   |   |--- livingrooms <= 4.50
+|   |   |   |   |--- bathrooms <= 3.50
+|   |   |   |   |   |--- bedrooms <= 3.50
+|   |   |   |   |   |   |--- front <= 4.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |--- front >  4.50
+|   |   |   |   |   |   |   |--- class: 100000-199999
+|   |   |   |   |   |--- bedrooms >  3.50
+|   |   |   |   |   |   |--- bedrooms <= 4.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |--- bedrooms >  4.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |--- bathrooms >  3.50
+|   |   |   |   |   |--- pool <= 0.50
+|   |   |   |   |   |   |--- front <= 1.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |--- front >  1.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 17
+|   |   |   |   |   |--- pool >  0.50
+|   |   |   |   |   |   |--- size <= 4.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |--- size >  4.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |--- livingrooms >  4.50
+|   |   |   |   |--- size <= 4.00
+|   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |--- size >  4.00
+|   |   |   |   |   |--- bedrooms <= 6.00
+|   |   |   |   |   |   |--- class: 100000-199999
+|   |   |   |   |   |--- bedrooms >  6.00
+|   |   |   |   |   |   |--- elevator <= 0.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |--- elevator >  0.50
+|   |   |   |   |   |   |   |--- class: 100000-199999
+|   |   |--- size >  6.50
+|   |   |   |--- front <= 3.50
+|   |   |   |   |--- property_age <= 0.50
+|   |   |   |   |   |--- livingrooms <= 1.50
+|   |   |   |   |   |   |--- duplex <= 0.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |--- duplex >  0.50
+|   |   |   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |   |--- livingrooms >  1.50
+|   |   |   |   |   |   |--- furnished <= 0.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |--- furnished >  0.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |--- property_age >  0.50
+|   |   |   |   |   |--- livingrooms <= 1.50
+|   |   |   |   |   |   |--- class: 100000-199999
+|   |   |   |   |   |--- livingrooms >  1.50
+|   |   |   |   |   |   |--- class: 0-99999
+|   |   |   |--- front >  3.50
+|   |   |   |   |--- fireplace <= 0.50
+|   |   |   |   |   |--- front <= 4.50
+|   |   |   |   |   |   |--- bedrooms <= 4.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |--- bedrooms >  4.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |--- front >  4.50
+|   |   |   |   |   |   |--- stairs <= 0.50
+|   |   |   |   |   |   |   |--- class: 0-99999
+|   |   |   |   |   |   |--- stairs >  0.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |--- fireplace >  0.50
+|   |   |   |   |   |--- basement <= 0.50
+|   |   |   |   |   |   |--- furnished <= 0.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |--- furnished >  0.50
+|   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |--- basement >  0.50
+|   |   |   |   |   |   |--- class: 200000-299999
